@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Mahour",
+  "description": "Adds a new Iranian(Persian/Jalali/Khorshidi) date column to ThunderBird.",
+  "version": "1.0.0",
+  "author": "M.Zeinali",
+  "applications": {
+    "gecko": {
+      "id": "mahour@zmim.ir",
+      "strict_min_version": "68.0a1"
+    }
+  },
+  "experiment_apis": {
+    "FAC": {
+      "schema": "api/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["FAC"]],
+        "script": "api/experiments.js",
+        "events": ["startup"]
+      }
+    }
+  },
+  "background": {
+    "scripts": ["background/background.js"]
+  },
+  "browser_action": {
+    "default_title": "ماهور",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "assets/icons/icon48.png"
+    }
+  },
+  "icons": {
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "64": "assets/icons/icon64.png",
+    "128": "assets/icons/icon128.png"
+  }
+}

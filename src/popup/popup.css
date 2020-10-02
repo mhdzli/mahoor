@@ -1,0 +1,206 @@
+/**
+ * Fonts
+ */
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir.eot');
+    src: url('../assets/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir.woff2') format('woff2'),
+         url('../assets/fonts/Vazir.woff') format('woff'),
+         url('../assets/fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Bold.eot');
+    src: url('../assets/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Bold.woff') format('woff'),
+         url('../assets/fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Black.eot');
+    src: url('../assets/fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Black.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Black.woff') format('woff'),
+         url('../assets/fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Medium.eot');
+    src: url('../assets/fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Medium.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Medium.woff') format('woff'),
+         url('../assets/fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Light.eot');
+    src: url('../assets/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Light.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Light.woff') format('woff'),
+         url('../assets/fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Thin.eot');
+    src: url('../assets/fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Thin.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Thin.woff') format('woff'),
+         url('../assets/fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    color: #555;
+    cursor: default;
+    font-family: 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    max-width: 348px;
+}
+
+/**
+ * Sections
+ */
+
+
+header {
+    align-items: center;
+    border-bottom: solid #d3d3d3 1px;
+    display: flex;
+    position: relative;
+}
+
+.panel {
+    overflow: hidden;
+    padding: 10px 8px;
+}
+
+.panel:not(:last-child) {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.subpanel {
+    padding-bottom: 6px;
+}
+
+footer {
+    text-align: left;
+    overflow: hidden;
+    padding: 8px;
+}
+
+/**
+ * Headings
+ */
+
+.heading {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 0;
+}
+
+.subheading {
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+/**
+ * Descriptions
+ */
+
+.description {
+    color: #a1b5c3;
+    font-style: italic;
+    margin: 0 6px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.label-version {
+    color: #457763;
+    font-size: 9px;
+}
+
+.label-domain {
+    color: #6d6d6d;
+    display: flex;
+    font-style: italic;
+    overflow: hidden;
+    padding: 6px 0 0 4px;
+    white-space: nowrap;
+}
+
+.side-note {
+    color: #646464;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/**
+ * Compatibility
+ */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+    body {
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /**
+     * Sections
+     */
+
+    body {
+        background-color: #404040;
+        color: #f9f9fa;
+    }
+
+    header {
+        border-bottom-color: #292929;
+    }
+
+
+    /**
+     * Links
+     */
+
+    .link-text {
+        color: #dadada;
+    }
+
+    .link-text:hover {
+        color: #f9f9fa;
+    }
+
+    .link-text:focus {
+        color: #f9f9fa;
+        outline-color: #dadada;
+    }
+
+}
