@@ -7,7 +7,21 @@ Iranian(Persian/Jalali/Khorshidi) Date.
 This add-on is reimplementation of [Iranian date for thunderbird](https://addons.thunderbird.net/en-US/thunderbird/addon/iranian-date-for-thunderbird/?src=ss) which stopped working 
 in Thunderbird 78. This add-on source is based on [Full address column](https://addons.thunderbird.net/en-US/thunderbird/addon/full-address-column/?src=ss) by Łukasz Kosson.
 
-# Screenshots:
+
+
+## Install:
+
+Manual install:
+
+Add-ons Manager>Tools for all add-ons>Install Add-on From File...><PATH TO LOCAL FILES> Choose manifest.json
+  
+Install ftom Thunderbird gallery
+
+[Mahour Iranian Date](https://addons.thunderbird.net/en-us/thunderbird/addon/mahour-iranian-date/)
+
+
+  
+## Screenshots:
 
 ![../master/assets/screenshots/activate.png](../master/assets/screenshots/activate.png)
 
