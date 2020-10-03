@@ -9,10 +9,11 @@ in Thunderbird 78. This add-on source is based on [Full address column](https://
 
 # Screenshots:
 
-![../master/screenshots/activate.png](../master/screenshots/activate.png)
+![../master/assets/screenshots/activate.png](../master/assets/screenshots/activate.png)
 
-![../master/screenshots/popup.png](../master/screenshots/popup.png)
-![../master/screenshots/screenshot.png](../master/screenshots/screenshot.png)
+![../master/assets/screenshots/popup.png](../master/assets/screenshots/popup.png)
+
+![../master/assets/screenshots/screenshot.png](../master/assets/screenshots/screenshot.png)
 
 ## Donation
 
