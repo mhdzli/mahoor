@@ -11,8 +11,8 @@ in Thunderbird 78. This add-on source is based on [Full address column](https://
 
 ![../master/screenshots/activate.png](../master/screenshots/activate.png)
 
-[../master/screenshots/popup.png](../master/screenshots/popup.png)
-[../master/screenshots/screenshot.png](../master/screenshots/screenshot.png)
+![../master/screenshots/popup.png](../master/screenshots/popup.png)
+![../master/screenshots/screenshot.png](../master/screenshots/screenshot.png)
 
 ## Donation
 
