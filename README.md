@@ -15,7 +15,7 @@ Manual install:
 
 Add-ons Manager>Tools for all add-ons>Install Add-on From File...><PATH TO LOCAL FILES> Choose manifest.json
   
-Install ftom Thunderbird gallery
+Install from Thunderbird gallery
 
 [Mahour Iranian Date](https://addons.thunderbird.net/en-us/thunderbird/addon/mahour-iranian-date/)
 
