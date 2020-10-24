@@ -16,8 +16,7 @@
       "parent": {
         "scopes": ["addon_parent"],
         "paths": [["FAC"]],
-        "script": "api/experiments.js",
-        "events": ["startup"]
+        "script": "api/experiments.js"
       }
     }
   },
