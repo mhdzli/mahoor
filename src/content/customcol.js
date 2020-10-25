@@ -79,9 +79,9 @@ const jalaliDateColumnHandler = {
     }
     //only show time if it's current day or yesterday
     if (isCurrentDay) {
-      placeholder = "TT امروز";
+      placeholder = "TT ،امروز";
     } else if (isYesterday) {
-      placeholder = "TT دیروز";
+      placeholder = "TT ،دیروز";
     }
 
     dateString = placeholder
