@@ -14,7 +14,7 @@ const EXTENSION_NAME = "mahour@zmim.ir";
 var extension = ExtensionParent.GlobalManager.getExtension(EXTENSION_NAME);
 
 // Implements the functions defined in the experiments section of schema.json.
-var FAC = class extends ExtensionCommon.ExtensionAPI {
+var MahourDate = class extends ExtensionCommon.ExtensionAPI {
   onStartup() {}
 
   onShutdown(isAppShutdown) {
@@ -29,8 +29,8 @@ var FAC = class extends ExtensionCommon.ExtensionAPI {
   getAPI(context) {
     context.callOnClose(this);
     return {
-      FAC: {
-        addWindowListener(dummy) {
+      MahourDate: {
+        addWindowListener(hich) {
           // Adds a listener to detect new windows.
           ExtensionSupport.registerWindowListener(EXTENSION_NAME, {
             chromeURLs: [
@@ -54,15 +54,15 @@ var FAC = class extends ExtensionCommon.ExtensionAPI {
 };
 
 function paint(win) {
-  win.FAC = {};
+  win.MahourDate = {};
   Services.scriptloader.loadSubScript(
     extension.getURL("content/customcol.js"),
-    win.FAC
+    win.MahourDate
   );
-  win.FAC.FACHeaderView.init(win);
+  win.MahourDate.MahourDateHeaderView.init(win);
 }
 
 function unpaint(win) {
-  win.FAC.FACHeaderView.destroy();
-  delete win.FAC;
+  win.MahourDate.MahourDateHeaderView.destroy();
+  delete win.MahourDate;
 }

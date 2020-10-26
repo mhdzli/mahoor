@@ -190,7 +190,7 @@ const columnOverlay = {
   },
 };
 
-var FACHeaderView = {
+var MahourDateHeaderView = {
   init(win) {
     this.win = win;
     columnOverlay.init(win);

@@ -3,7 +3,7 @@
 /* globals browser */
 
 var init = async () => {
-  browser.FAC.addWindowListener("dummy");
+  browser.MahourDate.addWindowListener("hich");
 };
 
 init();

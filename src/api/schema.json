@@ -1,6 +1,6 @@
 [
   {
-    "namespace": "FAC",
+    "namespace": "MahourDate",
     "functions": [
       {
         "name": "addWindowListener",
@@ -9,12 +9,12 @@
         "async": false,
         "parameters": [
           {
-            "name": "dummy",
+            "name": "hich",
             "type": "string",
-            "description": "dummy"
+            "description": "hich"
           }
         ]
       }
-    ]  
+    ]
   }
 ]

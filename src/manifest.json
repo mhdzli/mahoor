@@ -11,11 +11,11 @@
     }
   },
   "experiment_apis": {
-    "FAC": {
+    "MahourDate": {
       "schema": "api/schema.json",
       "parent": {
         "scopes": ["addon_parent"],
-        "paths": [["FAC"]],
+        "paths": [["MahourDate"]],
         "script": "api/experiments.js"
       }
     }
