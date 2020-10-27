@@ -3,6 +3,7 @@
   "name": "Mahour",
   "description": "Adds a new Iranian(Persian/Jalali/Khorshidi) date column to ThunderBird.",
   "version": "1.0.0",
+  "homepage_url": "https://github.com/mhdzli/mahour",
   "author": "M.Zeinali",
   "applications": {
     "gecko": {
