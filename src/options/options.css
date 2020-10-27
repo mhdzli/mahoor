@@ -1,0 +1,184 @@
+
+/**
+ * Fonts
+ */
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir.eot');
+    src: url('../assets/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir.woff2') format('woff2'),
+         url('../assets/fonts/Vazir.woff') format('woff'),
+         url('../assets/fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Bold.eot');
+    src: url('../assets/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Bold.woff') format('woff'),
+         url('../assets/fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Black.eot');
+    src: url('../assets/fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Black.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Black.woff') format('woff'),
+         url('../assets/fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Medium.eot');
+    src: url('../assets/fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Medium.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Medium.woff') format('woff'),
+         url('../assets/fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Light.eot');
+    src: url('../assets/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Light.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Light.woff') format('woff'),
+         url('../assets/fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../assets/fonts/Vazir-Thin.eot');
+    src: url('../assets/fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/Vazir-Thin.woff2') format('woff2'),
+         url('../assets/fonts/Vazir-Thin.woff') format('woff'),
+         url('../assets/fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/**
+ * Sections
+ */
+
+body {
+    color: #555;
+    cursor: default;
+    font-family: 'Vazir', 'Noto Sans', Arial, sans-serif !important;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    padding: 10px !important;
+    direction: rtl;
+    text-align: right;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+
+
+/**
+ * Titles
+ */
+
+.title-option {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+}
+
+/**
+ * Controls
+ */
+
+.input-checkbox {
+    margin: 0 5px 0 0;
+    outline: 0;
+}
+
+.input-text {
+    margin-left: 29px;
+    max-width: 320px;
+}
+
+.text-label {
+    padding: 0 2px;
+}
+
+.input-checkbox:focus + .text-label {
+    outline: 1px dotted #000;
+}
+
+/**
+ * Icons
+ */
+
+.icon {
+    margin-right: 3px;
+}
+
+/**
+ * Buttons
+ */
+
+.button {
+    -moz-user-select: none;
+    background-color: #f5f5f5;
+    border-color: #cfcfcf;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px 1px 2px 1px;
+    color: #282828;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    outline: 0;
+    padding: 5px 22px;
+    text-decoration: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: #fff;
+}
+
+.button:focus {
+    background-color: #fff;
+    border-color: #9a9a9a;
+    color: #000;
+}
+
+.button:active {
+    background-color: #dedede;
+    margin-top: 1px;
+    border-bottom-width: 1px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #202023;
+        color: #f9f9fa;
+    }
+
+    .description-option {
+        color: #b1b1b3;
+    }
+
+    .input-checkbox:focus + .text-label {
+        outline: 1px dotted #f9f9fa;
+    }
+}
