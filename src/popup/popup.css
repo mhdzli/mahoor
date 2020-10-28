@@ -97,10 +97,6 @@ header {
     border-bottom: 1px solid #d8d8d8;
 }
 
-.subpanel {
-    padding-bottom: 6px;
-}
-
 footer {
     text-align: left;
     overflow: hidden;
@@ -135,28 +131,9 @@ footer {
     text-align: center;
 }
 
-.hidden {
-    display: none;
-}
-
 .label-version {
     color: #457763;
     font-size: 9px;
-}
-
-.label-domain {
-    color: #6d6d6d;
-    display: flex;
-    font-style: italic;
-    overflow: hidden;
-    padding: 6px 0 0 4px;
-    white-space: nowrap;
-}
-
-.side-note {
-    color: #646464;
-    font-style: italic;
-    font-weight: 400;
 }
 
 /**
