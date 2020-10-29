@@ -16,13 +16,6 @@ const jalaliDateColumnHandler = {
     //fixed options
     var yearStyle = "2-digit";
     var dayStyle = "2-digit";
-    var hourStyle = "2-digit";
-    var minuteStyle = "2-digit";
-
-    //customizeable options
-    var monthStyle = "2-digit";
-    var weekDayStyle = "hidden";
-    var numbersStyle = "arabext";
 
     var locale = "fa-IR-u-nu-" + numbersStyle + "-ca-persian";
 
@@ -33,18 +26,20 @@ const jalaliDateColumnHandler = {
       weekDayStyle != "hidden"
         ? date.toLocaleString(locale, { weekday: weekDayStyle })
         : "";
-    var time = date.toLocaleString(locale, {
-      hour: hourStyle,
-      minute: minuteStyle,
-      hour12: false,
-    });
+    var time =
+      timeStyle != "hidden"
+        ? date.toLocaleString(locale, {
+            hour: timeStyle,
+            minute: timeStyle,
+            hour12: false,
+          }) + " ،"
+        : "";
 
     //fix for bug that doesn't prepend zero to farsei
-    if (time.length != 5) {
+    if (time.length != 5 && timeStyle != "hidden") {
       var zero = numbersStyle === "arabext" ? "۰" : "0";
       time = zero + time;
     }
-
     var isCurrentYear;
     if (currentDate.toLocaleString(locale, { year: yearStyle }) == year) {
       isCurrentYear = true;
@@ -68,9 +63,9 @@ const jalaliDateColumnHandler = {
 
     var placehodler;
     if (monthStyle === "long") {
-      placeholder = "TT ،\u202BWD DD MM YY\u202C";
+      placeholder = "TT \u202BWD DD MM YY\u202C";
     } else {
-      placeholder = "TT ،YY/MM/DD WD";
+      placeholder = "TT YY/MM/DD WD";
     }
 
     //remove year if it's current year
@@ -79,9 +74,9 @@ const jalaliDateColumnHandler = {
     }
     //only show time if it's current day or yesterday
     if (isCurrentDay) {
-      placeholder = "TT ،امروز";
+      placeholder = "TT امروز";
     } else if (isYesterday) {
-      placeholder = "TT ،دیروز";
+      placeholder = "TT دیروز";
     }
 
     dateString = placeholder

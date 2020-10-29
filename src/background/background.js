@@ -7,6 +7,7 @@ var datePrefrences = {
   longMonth: true,
   showTime: true,
   weekDay: false,
+  englishNumbers: false,
 };
 
 /*
