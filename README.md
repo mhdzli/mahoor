@@ -15,7 +15,7 @@ Install from Thunderbird gallery
 
 ## Contribution
 
-These links may help you in contributing:
+Helpfull links:
 
 [WebExtension API Developers Guide](https://firefox-source-docs.mozilla.org/toolkit/components/extensions/webextensions/index.html)
 
