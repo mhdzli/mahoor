@@ -17,7 +17,9 @@ Install from Thunderbird gallery
 
 Manual Install:
 
-Download the [XPI file](https://github.com/mhdzli/mahour/releases/download/V1.1.2/mahour_1.1.2-tb.xpi) and install that from the `Add-ons Manager`.
+1. Download the [XPI file](https://github.com/mhdzli/mahour/releases/download/V1.1.2/mahour_1.1.2-tb.xpi) and install that from the `Add-ons Manager`.
+
+1. Clone the sorce code and use the `zip -r mahour.xpi *` in `src` directory to build the xpi and then install from `Add-ons Manager` page in Thunderbird.
 
 
 ## Contribution
