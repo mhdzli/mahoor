@@ -13,6 +13,10 @@ Install from Thunderbird gallery
 
 [Mahour Iranian Date](https://addons.thunderbird.net/en-us/thunderbird/addon/mahour-iranian-date/)
 
+Manual Install:
+
+Download the [XPI file](https://github.com/mhdzli/mahour/releases/download/V1.1.2/mahour_1.1.2-tb.xpi) and install that from the `Add-ons Manager`.
+
 ## Contribution
 
 Helpfull links:
