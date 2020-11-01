@@ -188,11 +188,13 @@ footer {
 
 .label-link {
     color: #6d6d6d;
-    display: flex;
-    font-style: italic;
-    overflow: hidden;
-    padding: 6px 0 0 4px;
-    white-space: nowrap;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    line-height: 1;
+    margin: 6px 0 0 2px;
+    padding: 1px 2px 4px;
+    text-decoration: none;
 }
 
 /**
@@ -211,7 +213,7 @@ footer {
     padding: 5px 22px;
     user-select: none;
     overflow: hidden;
-    margin-bottom: 5px ;
+    margin-bottom: 10px ;
 }
 
 .button-toggle {

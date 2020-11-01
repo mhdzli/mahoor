@@ -1,3 +1,21 @@
+let optionsButtonElement = document.getElementById("options-button");
+var openPewfrences;
+
+function onOpened() {
+  return window.close();
+}
+
+function onError(error) {
+  console.log(`Error: ${error}`);
+}
+
+OptionsButtonClicked = function () {
+  openPewfrences = browser.runtime.openOptionsPage();
+  openPewfrences.then(onOpened, onError);
+};
+
+optionsButtonElement.addEventListener("mouseup", OptionsButtonClicked);
+
 // /// Using popup as prefrences page ///
 // const longMonthInput = document.querySelector("#longMonth");
 // const showTimeInput = document.querySelector("#showTime");
