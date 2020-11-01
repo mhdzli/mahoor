@@ -1,7 +1,7 @@
 # Mahour persian Dates For Thunderbird
 ===================
 
-This add-on adds one new columns called "تاریخ" in message list containing
+This add-on adds one new columns called `"تاریخ"` in message list containing
 Iranian(Persian/Jalali/Khorshidi) Date.
 
 Based on [Thunderbird-IranianDate](https://github.com/pouriap/Thunderbird-IranianDate) for thunderbird 68+.
