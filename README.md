@@ -1,11 +1,10 @@
 # Mahour persian Dates For Thunderbird
 ===================
 
-This add-on adds one new columns called "تاریخ" in message list containing
+This add-on adds one new columns called `"تاریخ"` in message list containing
 Iranian(Persian/Jalali/Khorshidi) Date.
 
-This add-on is reimplementation of [Iranian date for thunderbird](https://addons.thunderbird.net/en-US/thunderbird/addon/iranian-date-for-thunderbird/?src=ss) which stopped working 
-in Thunderbird 78. This add-on source is based on [Full address column](https://addons.thunderbird.net/en-US/thunderbird/addon/full-address-column/?src=ss) by Łukasz Kosson.
+This add-on is reimplementation of [Iranian date for thunderbird](https://addons.thunderbird.net/en-US/thunderbird/addon/iranian-date-for-thunderbird/?src=ss) ([GitHub Page](https://github.com/pouriap/Thunderbird-IranianDate)) for thunderbird 68+. The API-Extension source is based on [Full address column](https://addons.thunderbird.net/en-US/thunderbird/addon/full-address-column/?src=ss)([GitHub Page](https://github.com/lkosson/full-address-column)) by Łukasz Kosson.
 
 ## Install:
 
@@ -15,7 +14,10 @@ Install from Thunderbird gallery
 
 Manual Install:
 
-Download the [XPI file](https://github.com/mhdzli/mahour/releases/download/V1.1.2/mahour_1.1.2-tb.xpi) and install that from the `Add-ons Manager`.
+1. Download the [XPI file](https://github.com/mhdzli/mahour/releases/download/V1.1.2/mahour_1.1.2-tb.xpi) and install that from the `Add-ons Manager`.
+
+1. Build from source: Clone the sorce code and use the `zip -r mahour.xpi *` in `src` directory to build the xpi and then install it from `Add-ons Manager` page in Thunderbird.
+
 
 ## Contribution
 
