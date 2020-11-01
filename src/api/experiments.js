@@ -70,10 +70,10 @@ var MahourDate = class extends ExtensionCommon.ExtensionAPI {
             numbersStyle = "latn";
           } else {
             numbersStyle = "arabext";
-            for (let win of Services.wm.getEnumerator("mail:3pane")) {
+          }
+          for (let win of Services.wm.getEnumerator("mail:3pane")) {
               win.MahourDate.MahourDateHeaderView.destroy();
               win.MahourDate.MahourDateHeaderView.init(win);
-            }
           }
         },
       },
