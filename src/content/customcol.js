@@ -36,7 +36,7 @@ const jalaliDateColumnHandler = {
         : "";
 
     //fix for bug that doesn't prepend zero to farsei
-    if (time.length != 5 && timeStyle != "hidden") {
+    if (time.length != 7 && timeStyle != "hidden") {
       var zero = numbersStyle === "arabext" ? "۰" : "0";
       time = zero + time;
     }

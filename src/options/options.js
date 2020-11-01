@@ -16,7 +16,8 @@ function storeSettings() {
   browser.storage.local.set({
     datePrefrences: newSettings,
   });
-  browser.MahourDate.changeSettings(newSettings);
+  var backPage = browser.extension.getBackgroundPage();
+  backPage.repaint(newSettings);
 }
 
 /*

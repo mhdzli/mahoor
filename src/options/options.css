@@ -128,45 +128,6 @@ body {
     margin-right: 3px;
 }
 
-/**
- * Buttons
- */
-
-.button {
-    -moz-user-select: none;
-    background-color: #f5f5f5;
-    border-color: #cfcfcf;
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 1px 1px 2px 1px;
-    color: #282828;
-    cursor: pointer;
-    float: left;
-    font-size: 12px;
-    outline: 0;
-    padding: 5px 22px;
-    text-decoration: none;
-    user-select: none;
-    white-space: nowrap;
-}
-
-.button:hover {
-    background-color: #fff;
-}
-
-.button:focus {
-    background-color: #fff;
-    border-color: #9a9a9a;
-    color: #000;
-}
-
-.button:active {
-    background-color: #dedede;
-    margin-top: 1px;
-    border-bottom-width: 1px;
-}
-
-
 @media (prefers-color-scheme: dark) {
 
     body {

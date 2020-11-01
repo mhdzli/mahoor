@@ -3,7 +3,6 @@
 
 "use strict";
 
-var optionPage = false;
 var { Services } = ChromeUtils.import("resource://gre/modules/Services.jsm");
 var { ExtensionSupport } = ChromeUtils.import(
   "resource:///modules/ExtensionSupport.jsm"
@@ -50,7 +49,6 @@ var MahourDate = class extends ExtensionCommon.ExtensionAPI {
           });
         },
         changeSettings(newSettings) {
-          optionPage = true;
           if (newSettings.longMonth) {
             monthStyle = "long";
           } else {
@@ -70,10 +68,10 @@ var MahourDate = class extends ExtensionCommon.ExtensionAPI {
             numbersStyle = "latn";
           } else {
             numbersStyle = "arabext";
-            for (let win of Services.wm.getEnumerator("mail:3pane")) {
-              win.MahourDate.MahourDateHeaderView.destroy();
-              win.MahourDate.MahourDateHeaderView.init(win);
-            }
+          }
+          for (let win of Services.wm.getEnumerator("mail:3pane")) {
+            win.MahourDate.MahourDateHeaderView.destroy();
+            win.MahourDate.MahourDateHeaderView.init(win);
           }
         },
       },
@@ -81,13 +79,9 @@ var MahourDate = class extends ExtensionCommon.ExtensionAPI {
   }
 
   close() {
-    if (optionPage) {
-      optionPage = false;
-    } else {
-      ExtensionSupport.unregisterWindowListener(EXTENSION_NAME);
-      for (let win of Services.wm.getEnumerator("mail:3pane")) {
-        unpaint(win);
-      }
+    ExtensionSupport.unregisterWindowListener(EXTENSION_NAME);
+    for (let win of Services.wm.getEnumerator("mail:3pane")) {
+      unpaint(win);
     }
   }
 };
