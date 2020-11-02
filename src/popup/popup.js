@@ -1,5 +1,5 @@
 let optionsButtonElement = document.getElementById("options-button");
-var openPewfrences;
+var openPreferences;
 
 function onOpened() {
   return window.close();
@@ -10,8 +10,8 @@ function onError(error) {
 }
 
 OptionsButtonClicked = function () {
-  openPewfrences = browser.runtime.openOptionsPage();
-  openPewfrences.then(onOpened, onError);
+  openPreferences = browser.runtime.openOptionsPage();
+  openPreferences.then(onOpened, onError);
 };
 
 optionsButtonElement.addEventListener("mouseup", OptionsButtonClicked);
