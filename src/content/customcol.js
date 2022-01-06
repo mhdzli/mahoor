@@ -35,7 +35,7 @@ const jalaliDateColumnHandler = {
           }) + " ،"
         : "";
 
-    //fix for bug that doesn't prepend zero to farsei
+    //Fix for a bug that doesn't prepend zero to Farsi
     if (time.length != 7 && timeStyle != "hidden") {
       var zero = numbersStyle === "arabext" ? "۰" : "0";
       time = zero + time;
@@ -139,7 +139,7 @@ const columnOverlay = {
     treeCol.setAttribute("flex", "2");
     treeCol.setAttribute("closemenu", "none");
     treeCol.setAttribute("label", columnLabel);
-    treeCol.setAttribute("tooltiptext", "تاریخ خورشیدی");
+    treeCol.setAttribute("tooltiptext", "Sort by Persian date");
 
     const threadCols = win.document.getElementById("threadCols");
     threadCols.appendChild(treeCol);
@@ -170,7 +170,7 @@ const columnOverlay = {
   },
 
   addColumns(win) {
-    this.addColumn(win, "jalaliDateColumn", "تاریخ");
+    this.addColumn(win, "jalaliDateColumn", "Date (Persian)");
   },
 
   destroyColumn(columnId) {
