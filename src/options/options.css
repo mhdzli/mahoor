@@ -4,64 +4,75 @@
  */
 
 @font-face {
-    font-family: 'Vazir';
-    src: url('../assets/fonts/Vazir.eot');
-    src: url('../assets/fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/Vazir.woff2') format('woff2'),
-         url('../assets/fonts/Vazir.woff') format('woff'),
-         url('../assets/fonts/Vazir.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Vazir';
-    src: url('../assets/fonts/Vazir-Bold.eot');
-    src: url('../assets/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/Vazir-Bold.woff2') format('woff2'),
-         url('../assets/fonts/Vazir-Bold.woff') format('woff'),
-         url('../assets/fonts/Vazir-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Vazir';
-    src: url('../assets/fonts/Vazir-Black.eot');
-    src: url('../assets/fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/Vazir-Black.woff2') format('woff2'),
-         url('../assets/fonts/Vazir-Black.woff') format('woff'),
-         url('../assets/fonts/Vazir-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Vazir';
-    src: url('../assets/fonts/Vazir-Medium.eot');
-    src: url('../assets/fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/Vazir-Medium.woff2') format('woff2'),
-         url('../assets/fonts/Vazir-Medium.woff') format('woff'),
-         url('../assets/fonts/Vazir-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Vazir';
-    src: url('../assets/fonts/Vazir-Light.eot');
-    src: url('../assets/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/Vazir-Light.woff2') format('woff2'),
-         url('../assets/fonts/Vazir-Light.woff') format('woff'),
-         url('../assets/fonts/Vazir-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Vazir';
-    src: url('../assets/fonts/Vazir-Thin.eot');
-    src: url('../assets/fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/Vazir-Thin.woff2') format('woff2'),
-         url('../assets/fonts/Vazir-Thin.woff') format('woff'),
-         url('../assets/fonts/Vazir-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('../assets/fonts/Vazirmatn-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 /**
@@ -71,7 +82,7 @@
 body {
     color: #555;
     cursor: default;
-    font-family: 'Vazir', 'Noto Sans', Arial, sans-serif !important;
+    font-family: 'Vazirmatn', 'Noto Sans', Arial, sans-serif !important;
     font-size: 14px;
     margin-bottom: 5px;
     margin-top: -15px;
