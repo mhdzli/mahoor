@@ -1,39 +1,47 @@
 {
   "manifest_version": 2,
-  "name": "Mahour",
+  "name": "Mahoor",
   "description": "Adds a new Iranian(Persian/Jalali/Khorshidi) date column to ThunderBird.",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "homepage_url": "https://github.com/mhdzli/mahour",
   "author": "M.Zeinali",
   "browser_specific_settings": {
     "gecko": {
       "id": "mahour@zmim.ir",
-      "strict_min_version": "68.0a1",
-      "strict_max_version": "110.*"
-    }
-  },
-  "experiment_apis": {
-    "MahourDate": {
-      "schema": "api/schema.json",
-      "parent": {
-        "scopes": ["addon_parent"],
-        "paths": [["MahourDate"]],
-        "script": "api/experiments.js"
-      }
+      "strict_min_version": "115.10.0",
+      "strict_max_version": "127.*"
     }
   },
   "background": {
-    "scripts": ["background/background.js"]
-  },
-  "options_ui": {
-    "page": "options/options.html",
-    "open_in_tab": false
+    "scripts": [
+      "background/background.js"
+    ]
   },
   "icons": {
     "32": "assets/icons/icon32.png",
     "48": "assets/icons/icon48.png",
     "64": "assets/icons/icon64.png",
     "128": "assets/icons/icon128.png"
+  },
+  "experiment_apis": {
+    "customColumns": {
+      "schema": "api/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "customColumns"
+          ]
+        ],
+        "script": "api/implementation.js"
+      }
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
   },
   "permissions": ["storage"]
 }
