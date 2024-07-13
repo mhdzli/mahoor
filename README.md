@@ -1,4 +1,4 @@
-# Mahour persian Dates For Thunderbird
+# Mahoor persian Dates For Thunderbird
 ===================
 
 This add-on adds one new column called `"Date (Persian)"` in message list containing
@@ -10,11 +10,11 @@ This add-on is reimplementation of [Iranian date for thunderbird](https://addons
 
 Install from Thunderbird gallery
 
-[Mahour Iranian Date](https://addons.thunderbird.net/en-us/thunderbird/addon/mahour-iranian-date/)
+[Mahoor Iranian Date](https://addons.thunderbird.net/en-us/thunderbird/addon/mahoor-iranian-date/)
 
 Manual Install:
 
-1. Download the [XPI file](https://github.com/mhdzli/mahour/releases/) and install that from the `Add-ons Manager`.
+1. Download the [XPI file](https://github.com/mhdzli/mahoor/releases/) and install that from the `Add-ons Manager`.
 
 1. Build from source: Clone the sorce code and use the `zip -r mahour.xpi *` in `src` directory to build the xpi and then install it from `Add-ons Manager` page in Thunderbird.
 
