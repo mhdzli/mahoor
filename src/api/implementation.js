@@ -1,35 +1,33 @@
-const { ExtensionCommon } = ChromeUtils.importESModule("resource://gre/modules/ExtensionCommon.sys.mjs");
+function loadSystemModule(newPath, oldPath) {
+    const errors = []
+    try {
+        return ChromeUtils.importESModule(newPath);
+    } catch (ex) {
+        errors.push(ex);
+    }
+    try {
+        return ChromeUtils.import(oldPath);
+    } catch (ex) {
+        errors.push(ex);
+    }
+    throw new Error(`Could not load system module: ${errors}`);
+}
 
-const { ExtensionSupport } = function() {
-	for (const module of [
-		"resource:///modules/ExtensionSupport.sys.mjs", // v128
-		"resource:///modules/ExtensionSupport.jsm", // v115.10
-	]) {
-		try {
-			const m = ChromeUtils.importESModule(module);
-			console.log("ThreadPaneColumns", module);
-			return m;
-		} catch (ex) {
-			console.log("ThreadPaneColumns", module, ex);
-		}
-	}
-	return undefined;
-}();
-
+const { ExtensionSupport } = loadSystemModule("resource:///modules/ExtensionSupport.sys.mjs", "resource:///modules/ExtensionSupport.jsm");
+const { ExtensionCommon } = loadSystemModule("resource://gre/modules/ExtensionCommon.sys.mjs", "resource://gre/modules/ExtensionCommon.jsm");
 const { ThreadPaneColumns } = function() {
-	for (const module of [
-		"chrome://messenger/content/ThreadPaneColumns.mjs", // v128
-		"chrome://messenger/content/thread-pane-columns.mjs", // v115.10
-	]) {
-		try {
-			const m = ChromeUtils.importESModule(module);
-			console.log("ThreadPaneColumns", module);
-			return m;
-		} catch (ex) {
-			console.log("ThreadPaneColumns", module, ex);
-		}
-	}
-	return undefined;
+    const errors = []
+    for (const module of [
+        "chrome://messenger/content/ThreadPaneColumns.mjs", // v128
+        "chrome://messenger/content/thread-pane-columns.mjs", // v115.10
+    ]) {
+        try {
+            return ChromeUtils.importESModule(module);
+        } catch (ex) {
+            errors.push(ex);
+        }
+    }
+    throw new Error(`Could not load system module: ${errors}`);
 }();
 
 
