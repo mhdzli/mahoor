@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Mahoor",
   "description": "Adds a new Iranian(Persian/Jalali/Khorshidi) date column to ThunderBird.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "homepage_url": "https://github.com/mhdzli/mahoor",
   "author": "M.Zeinali",
   "browser_specific_settings": {
