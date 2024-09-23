@@ -117,14 +117,20 @@ var customColumns = class extends ExtensionCommon.ExtensionAPI {
           }
 
           var callback = field == "persianDate" ? persianDate : getEmpty;
+          var sort_callback = (message) => {
+              return field == "persianDate"
+                  ? Math.floor(message.date / 1000000)
+                  : 0;
+          };
 
           ThreadPaneColumns.addCustomColumn(id, {
             name: name,
             hidden: false,
             icon: false,
             resizable: true,
-            sortable: false,
-            textCallback: callback
+            sortable: true,
+            textCallback: callback,
+            sortCallback: sort_callback,
           });
         },
 
