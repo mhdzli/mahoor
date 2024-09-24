@@ -1,11 +1,10 @@
-
 /**
  * Fonts
  */
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-Thin.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -13,7 +12,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -21,7 +20,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-Light.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -29,7 +28,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-Regular.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -37,7 +36,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-Medium.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,7 +44,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -53,7 +52,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-Bold.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -61,7 +60,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -69,7 +68,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('../assets/fonts/Vazirmatn-Black.woff2') format('woff2');
+  src: url("../assets/fonts/Vazirmatn-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -80,33 +79,46 @@
  */
 
 body {
-    color: #555;
-    cursor: default;
-    font-family: 'Vazirmatn', 'Noto Sans', Arial, sans-serif !important;
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: -15px;
-    padding: 10px !important;
-    direction: rtl;
-    text-align: right;
+  color: #555;
+  cursor: default;
+  font-family: "Vazirmatn", "Noto Sans", Arial, sans-serif !important;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: -15px;
+  padding: 10px !important;
+  direction: rtl;
+  text-align: right;
 }
 
 .option {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
-
-
 
 /**
  * Titles
  */
 
 .title-option {
-    align-items: center;
-    display: flex;
-    font-weight: 600;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+}
+
+.title-option:hover ~ .description-option,
+.title-option:hover {
+  color: skyblue;
+}
+
+.input-checkbox:checked + .text-label {
+  font-weight: 900;
+  color: skyblue;
+}
+
+.label-checkbox,
+.input-checkbox {
+  cursor: pointer;
 }
 
 /**
@@ -114,21 +126,22 @@ body {
  */
 
 .input-checkbox {
-    margin: 0 5px 0 0;
-    outline: 0;
+  margin: 0 5px 0 0;
+  outline: 0;
+  accent-color: #003fff;
 }
 
 .input-text {
-    margin-left: 29px;
-    max-width: 320px;
+  margin-left: 29px;
+  max-width: 320px;
 }
 
 .text-label {
-    padding: 0 2px;
+  padding: 0 2px;
 }
 
 .input-checkbox:focus + .text-label {
-    outline: 1px dotted #000;
+  outline: 1px dotted #000;
 }
 
 /**
@@ -136,21 +149,35 @@ body {
  */
 
 .icon {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #202023;
+    color: #f9f9fa;
+  }
 
-    body {
-        background-color: #202023;
-        color: #f9f9fa;
-    }
+  .description-option {
+    color: #b1b1b3;
+  }
 
-    .description-option {
-        color: #b1b1b3;
-    }
+  .input-checkbox:focus + .text-label {
+    outline: 1px dotted #f9f9fa;
+  }
 
-    .input-checkbox:focus + .text-label {
-        outline: 1px dotted #f9f9fa;
-    }
+  .title-option:hover ~ .description-option,
+  .title-option:hover {
+    color: #ff5277;
+  }
+
+  .input-checkbox:checked + .text-label {
+    color: #ff5277;
+  }
+
+  .input-checkbox {
+    margin: 0 5px 0 0;
+    outline: 0;
+    accent-color: crimson;
+  }
 }

@@ -1,63 +1,65 @@
 <!DOCTYPE overlay SYSTEM "chrome://checkbox/locale/checkbox.dtd">
 
 <html>
+  <head>
+    <title>تنظیمات</title>
 
-    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
 
-        <title>تنظیمات</title>
+    <link rel="stylesheet" type="text/css" href="options.css" />
+  </head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8" />
+  <body>
+    <section class="option">
+      <div class="title-option">
+        <label class="label-checkbox">
+          <input class="input-checkbox" type="checkbox" id="longMonth" />
+          <span class="text-label">نام ماه</span>
+        </label>
+      </div>
+      <div class="description-option">نمایش نام ماه به جای عدد ماه</div>
+    </section>
 
-        <link rel="stylesheet" type="text/css" href="options.css">
+    <section class="option">
+      <div class="title-option">
+        <label class="label-checkbox">
+          <input class="input-checkbox" type="checkbox" id="twoDigitYear" />
+          <span class="text-label">سال دو رقمی</span>
+        </label>
+      </div>
+      <div class="description-option">نمایش سال با ۲ رقم به جای ۴ رقم</div>
+    </section>
 
-    </head>
+    <section class="option">
+      <div class="title-option">
+        <label class="label-checkbox">
+          <input class="input-checkbox" type="checkbox" id="showTime" />
+          <span class="text-label">ساعت</span>
+        </label>
+      </div>
+      <div class="description-option">نمایش ساعت</div>
+    </section>
 
-    <body>
-        
-	</section>
-        <section class="option">
-            <div class="title-option">
-                <label class="label-checkbox">
-                    <input class="input-checkbox" type="checkbox" id="longMonth">
-                    <span class="text-label">نام ماه</span>
-                </label>
-            </div>
-            <div class="description-option">نمایش نام ماه به جای عدد ماه</div>
-        </section>
+    <section class="option">
+      <div class="title-option">
+        <label class="label-checkbox">
+          <input class="input-checkbox" type="checkbox" id="weekDay" />
+          <span class="text-label">روز هفته</span>
+        </label>
+      </div>
+      <div class="description-option">نمایش روز هفته</div>
+    </section>
 
-        <section class="option">
-            <div class="title-option">
-                <label class="label-checkbox">
-                    <input class="input-checkbox" type="checkbox" id="showTime">
-                    <span class="text-label">ساعت</span>
-                </label>
-            </div>
-            <div class="description-option">نمایش ساعت</div>
-        </section>
-        
-        <section class="option">
-            <div class="title-option">
-                <label class="label-checkbox">
-                    <input class="input-checkbox" type="checkbox" id="weekDay">
-                    <span class="text-label">روز هفته</span>
-                </label>
-            </div>
-            <div class="description-option">نمایش روز هفته</div>
-        </section>
-
-        <section class="option">
-            <div class="title-option">
-                <label class="label-checkbox">
-                    <input class="input-checkbox" type="checkbox" id="englishNumbers">
-                    <span class="text-label">اعداد انگلیسی</span>
-                </label>
-            </div>
-            <div class="description-option">نمایش اعداد انگلیسی به جای فارسی</div>
-        </section>
-
-        <script src="options.js"></script>
-
-    </body>
-
+    <section class="option">
+      <div class="title-option">
+        <label class="label-checkbox">
+          <input class="input-checkbox" type="checkbox" id="englishNumbers" />
+          <span class="text-label">اعداد انگلیسی</span>
+        </label>
+      </div>
+      <div class="description-option">نمایش اعداد انگلیسی به جای فارسی</div>
+    </section>
+    <script src="options.js"></script>
+  </body>
 </html>

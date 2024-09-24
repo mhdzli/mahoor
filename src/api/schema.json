@@ -24,6 +24,7 @@
             "type": "object",
             "properties": {
               "longMonth": { "type": "boolean" },
+              "twoDigitYear": { "type": "boolean" },
               "showTime": { "type": "boolean" },
               "weekDay": { "type": "boolean" },
               "englishNumbers": { "type": "boolean" }
@@ -45,4 +46,3 @@
     ]
   }
 ]
-
