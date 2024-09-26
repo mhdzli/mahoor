@@ -35,14 +35,6 @@ If you want to temporarily run an Add-on:
 
 Tools>Developer Tools>Debug Add-ons>Load Temporary Add-on><PATH TO LOCAL SOURCE FILES> Choose manifest.json
 
-## Screenshots:
-
-![../master/assets/screenshots/activate.png](../master/assets/screenshots/activate.png)
-
-![../master/assets/screenshots/popup.png](../master/assets/screenshots/popup.png)
-
-![../master/assets/screenshots/screenshot.png](../master/assets/screenshots/screenshot.png)
-
 ## Donation
 
 If this project help you, you can give me a cup of coffee :)
@@ -50,3 +42,13 @@ If this project help you, you can give me a cup of coffee :)
 [![payping](../master/assets/payping.gif)](https://www.payping.ir/@mzeinali)
 
 [![hamibash](../master/assets/hamibash.png)](https://www.hamibash.com/mzeinali)
+
+## Screenshots:
+
+![../master/assets/screenshots/activate.png](../master/assets/screenshots/activate.png)
+
+![../master/assets/screenshots/options-dark.png](../master/assets/screenshots/options-dark.png)
+
+![../master/assets/screenshots/screenshot.png](../master/assets/screenshots/screenshot.png)
+
+![../master/assets/screenshots/options-light.png](../master/assets/screenshots/options-light.png)
